@@ -1,0 +1,59 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.parent {
+  background-color: #eee;
+  font-weight: bold;
+  height: 340px;
+  margin: 20px auto;
+  width: 550px;
+}
+.first,
+.second {
+  box-sizing: border-box;
+  float: left;
+  padding: 30px;
+  text-align: center;
+  width: 250px;
+}
+.name {
+  background-color: #03a9f4;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+}
+.price {
+  background-color: #dddddd;
+  border-radius: 50%;
+  font-size: 40px;
+  line-height: 5;
+  margin: 35px auto;
+}
+
+.or {
+  background-color: white;
+  float: left;
+  height: 100%;
+  position: relative;
+  width: 50px;
+}
+.or::before {
+  background-color: #03a9f4;
+  content: "";
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  width: 1.5px;
+}
+.or::after {
+  background-color: #03a9f4;
+  border-radius: 50%;
+  color: white;
+  content: "Or";
+  left: 25%;
+  padding: 5px;
+  position: absolute;
+  top: 50%;
+}
